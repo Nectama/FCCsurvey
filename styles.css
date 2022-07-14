@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+html {
+  --color-purpleish: rgba(27, 27, 50, 0.6);
+  color: white;
+  font-family: 'Radio Canada', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  background: radial-gradient(circle, rgba(2,0,36,1) 71%, rgba(82,5,122,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.bigbox {
+  margin: auto;
+}
+@media (min-width: 576px) {
+  .bigbox {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bigbox {
+    max-width: 720px;
+  }
+}
+header {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+form {
+  background-color: var(--color-purpleish);
+  border-radius: 8px;
+  text-align: left;
+  padding: 2rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.form-block {
+  margin: 0 auto;
+  padding: 1rem;
+}
+.member-data {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding: 0;
+  margin: 0.4%;
+  font-size: inherit;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+textarea {
+  width: 100%;
+  min-height: 150px;
+  font-size: inherit;
+  font-family: inherit;
+}
+span {
+  font-size: 1rem;
+}
+#submit {
+  background: radial-gradient(circle, rgba(255,94,94,1) 48%, rgba(255,248,0,1) 100%);
+  font-family: inherit;
+}
+#submit:hover {
+  transform: scale(1.05);
+}

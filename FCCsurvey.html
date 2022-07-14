@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>Gym Members Survey</title>
+  <meta charset="UTF-8">
+  <link type="text/css" href="styles.css">
+</head>
+<body>
+<div class="bigbox">
+  <header>
+    <h1 id="title">"X" Gym Members Survey</h1>
+    <p id="description">Welcome, we designed this survey because we are interested in providing the most excellent and personalized training experience at our installations. To achieve this, your opinion as a current member matters the most. We thank you in advance for taking the time to help us with our betterment</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-block">
+      <label id="name-label">Name<br><input type="text" id="name" class="member-data" placeholder="Enter your name here" required><br></label>
+      <label id="email-label">E-mail<br><input type="email" id="email" class="member-data" placeholder="Enter your e-mail here" required><br></label>
+      <label id="number-label">Member ID number<br><input type="number" id="number" class="member-data" placeholder="Enter your member ID here" min="0001" max="9999" required><br></label>
+      <label>How long have you been training with us?<br><select id="dropdown"class="member-data" required></label>
+      <option value="starter">Starter (1-3 months)</option>
+      <option value="accustomed">Accustomed (3-6 months)</option>
+      <option value="advanced"> Advanced (6-12 monthts)</option>
+      <option value="pro"> Pro (12+ monthts)</option>
+      <option value="family"> I'm part of the family (2+ years)</option>  
+     </select>
+    </div>
+    <div class="form-block">
+      <p>Would you reccomend our service to other people?</p>
+      <label><input name="recommendation" value="definitely" type="radio"> Definitely<br></label>
+      <label><input name="recommendation" value="maybe" type="radio"> Maybe<br></label>
+      <label><input name="recommendation" value="not-sure" type="radio"> Not sure<br></label>
+      <label><input name="recommendation" value="not-at-all" type="radio"> Not at all</label>
+      
+      <p>What do you think we could improve at our Gym? <span>(You can check multiple)</span></p>
+      <label><input type="checkbox" value="equipement"> The equipement available</label><br>
+      <label><input type="checkbox" value="service"> The Service provided</label><br>
+      <label><input type="checkbox" value="location"> The location</label><br>
+      <label><input type="checkbox" value="valueformoney"> The value for money</label><br>
+      <label><input type="checkbox" value="app"> The app functionality</label><br>
+      <label><input type="checkbox" value="discounts"> Discounts for companies & other promotions</label>
+      
+      <p>Please feel free to write any extra suggestions</p>
+      <textarea name="commentary" placeholder="Enter your comments here"></textarea>
+    </div>
+    <div class="form-block">
+      <input type="submit" id="submit" class="member-data" value="Submit">
+    </div>
+  </form>
+</div>
+<body>
+</html>
